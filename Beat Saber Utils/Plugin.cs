@@ -42,7 +42,8 @@ namespace BS_Utils
         {
             if (nextScene.name == "MenuCore")
             {
-                Logger.Log("Removing Isolated Level");
+                if (Gamemode.IsIsolatedLevel)
+                    Logger.Log("Removing Isolated Level");
                 Gamemode.IsIsolatedLevel = false;
                 Gamemode.IsolatingMod = "";
                 LevelData.Clear();

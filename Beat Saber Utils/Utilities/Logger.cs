@@ -18,11 +18,11 @@ namespace BS_Utils.Utilities
 
         internal static void Log(string message)
         {
-            log.Info($"[BS-Utils]  {message}");
+            log.Info(message);
         }
         internal static void Log(string message, IPALogger.Level level)
         {
-            log.Log(level, $"[BS-Utils]  {message}");
+            log.Log(level, message);
         }
     }
 }
